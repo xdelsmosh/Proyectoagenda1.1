@@ -2,12 +2,12 @@ package com.example.proyectoagenda;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
 public class RegistroActivity extends AppCompatActivity {
@@ -16,13 +16,14 @@ public class RegistroActivity extends AppCompatActivity {
     Button btn;
     Button btnvolver;
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registro);
 
         edUsuario = findViewById(R.id.editTextnombreusuauraio);
-        edEmail = findViewById(R.id.editTextemail);
+        edEmail = findViewById(R.id.editTextEmail);
         edPassword = findViewById(R.id.editTextnuevaPassword);
         edConfirmarPass = findViewById(R.id.confirmarpassword);
         btn = findViewById(R.id.buttonreg);

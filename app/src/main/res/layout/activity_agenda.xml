@@ -4,35 +4,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/back2"
-    tools:context=".RegistroActivity">
+    tools:context=".AgendaActivity"
+    android:background="@drawable/back1">
 
     <EditText
-        android:id="@+id/editTextnombreusuauraio"
+        android:id="@+id/Nombreformulario"
         android:layout_width="300dp"
         android:layout_height="43dp"
         android:drawableLeft="@drawable/baseline_person_24"
         android:drawablePadding="10dp"
         android:ems="10"
-        android:hint="Nombre Usuario"
+        android:hint="Nombre Completo"
         android:inputType="text"
         android:textColor="@color/black"
+        android:textColorHint="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textormulario"
-        app:layout_constraintVertical_bias="0.062"
-        android:textColorHint="#000000"/>
+        app:layout_constraintVertical_bias="0.062" />
 
     <EditText
-        android:id="@+id/editTextEmail"
+        android:id="@+id/editTextCorre"
         android:layout_width="300dp"
         android:layout_height="43dp"
         android:drawableLeft="@drawable/baseline_email_24"
         android:drawablePadding="10dp"
         android:ems="10"
-        android:hint="Email"
+        android:hint="Correo"
         android:inputType="textEmailAddress"
         android:textColor="@color/black"
         android:textColorHint="#000000"
@@ -40,28 +40,27 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextnombreusuauraio"
-        app:layout_constraintVertical_bias="0.109" />
+        app:layout_constraintTop_toBottomOf="@+id/Nombreformulario"
+        app:layout_constraintVertical_bias="0.121" />
 
     <TextView
         android:id="@+id/textormulario"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Registro"
+        android:text="Datos de Contacto"
         android:textColor="@color/black"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewformulario"
-        app:layout_constraintVertical_bias="0.137" />
+        app:layout_constraintVertical_bias="0.105" />
 
     <TextView
         android:id="@+id/textViewformulario"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Aplicación"
+        android:text="Formulario"
         android:textColor="@color/purple200"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -73,78 +72,94 @@
         app:layout_constraintVertical_bias="0.032" />
 
     <EditText
-        android:id="@+id/editTextnuevaPassword"
+        android:id="@+id/Numerocontacto"
         android:layout_width="300dp"
         android:layout_height="43dp"
-        android:layout_marginBottom="284dp"
         android:drawableLeft="@drawable/baseline_password_24"
         android:drawablePadding="10dp"
         android:ems="10"
-        android:hint="Contraseña"
-        android:inputType="textPassword"
+        android:hint="Número de Teléfono"
+        android:inputType="number"
         android:textColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColorHint="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/buttonreg"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextDireccion"
-        app:layout_constraintVertical_bias="1.0"
-        tools:ignore="SpeakableTextPresentCheck"
-        android:textColorHint="#000000"/>
+        app:layout_constraintTop_toBottomOf="@+id/editTextCorre"
+        app:layout_constraintVertical_bias="0.516"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <Button
         android:id="@+id/buttonreg"
-        android:layout_width="268dp"
-        android:layout_height="52dp"
+        android:layout_width="258dp"
+        android:layout_height="42dp"
         android:text="Registro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Numerocontacto"
+        app:layout_constraintVertical_bias="0.488" />
+
+    <Button
+        android:id="@+id/buttonback"
+        android:layout_width="260dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="32dp"
+        android:text="Volver"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/confirmarpassword"
-        app:layout_constraintVertical_bias="0.188" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonreg"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/textyaposeecuenta"
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:text="Ya tienes una cuenta?"
+        android:layout_marginTop="28dp"
+        android:text="Seleccione Fecha"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.052"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonreg" />
-
-    <EditText
-        android:id="@+id/confirmarpassword"
-        android:layout_width="300dp"
-        android:layout_height="43dp"
-        android:layout_marginTop="35dp"
-        android:drawableLeft="@drawable/baseline_password_24"
-        android:drawablePadding="10dp"
-        android:ems="10"
-        android:hint=" Confirmar contraseña"
-        android:inputType="textPassword"
-        android:textColor="@color/black"
-        android:textColorHint="#000000"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextnuevaPassword"
-        app:layout_constraintVertical_bias="0.049" />
+        app:layout_constraintTop_toBottomOf="@+id/Numerocontacto" />
 
     <Button
-        android:id="@+id/buttonvolver"
-        android:layout_width="122dp"
-        android:layout_height="47dp"
-        android:layout_marginTop="29dp"
-        android:text="Volver"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/buttonAppdate"
+        style="?android:spinnerStyle"
+        android:layout_width="87dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="12dp"
+        android:text="23/10/2023"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.058"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textyaposeecuenta"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/buttonHora"
+        style="?android:spinnerStyle"
+        android:layout_width="86dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="12dp"
+        android:text="12:00"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.827"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textHora" />
+
+    <TextView
+        android:id="@+id/textHora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Hora"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.761"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Numerocontacto" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

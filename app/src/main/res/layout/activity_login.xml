@@ -8,7 +8,7 @@
     android:background="@drawable/back1">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textViewformulario"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Aplicación"
@@ -23,7 +23,7 @@
         app:layout_constraintVertical_bias="0.068" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textormulario"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Login"
@@ -32,7 +32,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textViewformulario"
         app:layout_constraintVertical_bias="0.142" />
 
     <EditText
@@ -42,15 +42,16 @@
         android:drawableLeft="@drawable/baseline_person_24"
         android:drawablePadding="10dp"
         android:ems="10"
+        android:hint="Nombre Usuario"
         android:inputType="text"
-        android:text="Nombre Usuario"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.187" />
+        app:layout_constraintTop_toBottomOf="@+id/textormulario"
+        app:layout_constraintVertical_bias="0.187"
+        android:textColorHint="#000000"/>
 
     <EditText
         android:id="@+id/editTextTextPassword"
@@ -62,12 +63,14 @@
         android:drawablePadding="10dp"
         android:ems="10"
         android:inputType="textPassword"
+        android:textColor="#191818"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextusuario"
-        app:layout_constraintVertical_bias="0.112" />
+        app:layout_constraintVertical_bias="0.112"
+        android:textColorHint="#000000"/>
 
     <Button
         android:id="@+id/buttonlog"
@@ -93,4 +96,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonlog"
         app:layout_constraintVertical_bias="0.316" />
+
+    <Button
+        android:id="@+id/Huella"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inicio por Huella"
+        tools:layout_editor_absoluteX="129dp"
+        tools:layout_editor_absoluteY="652dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,7 +1,10 @@
 package com.example.proyectoagenda;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.biometric.BiometricPrompt;
 import androidx.cardview.widget.CardView;
+import androidx.core.content.ContextCompat;
 
 import android.content.Context;
 import android.content.Intent;
@@ -9,6 +12,8 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
+
+import java.util.concurrent.Executor;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -23,6 +28,7 @@ public class HomeActivity extends AppCompatActivity {
         Toast.makeText(getApplicationContext(),"Bienvenido"+usuario,Toast.LENGTH_SHORT).show();
 
         CardView exit = findViewById(R.id.tarjetasalir);
+
         exit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -43,4 +49,7 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
     }
+
+
+
 }
