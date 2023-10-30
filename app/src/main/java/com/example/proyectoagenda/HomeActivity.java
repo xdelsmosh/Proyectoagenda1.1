@@ -48,8 +48,19 @@ public class HomeActivity extends AppCompatActivity {
 
             }
         });
+
+
+        CardView findgps = findViewById(R.id.tarjetas);
+        findgps.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(HomeActivity.this,mapActivity.class));
+
+            }
+        });
     }
 
 
 
 }
+
