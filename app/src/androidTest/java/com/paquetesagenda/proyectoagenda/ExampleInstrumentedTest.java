@@ -1,4 +1,4 @@
-package com.example.proyectoagenda;
+package com.paquetesagenda.proyectoagenda;
 
 import android.content.Context;
 

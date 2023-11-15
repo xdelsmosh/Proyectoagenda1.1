@@ -1,4 +1,4 @@
-package com.example.proyectoagenda;
+package com.paquetesagenda.proyectoagenda;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.EditText;
 import android.widget.TextView;
-
+import com.paquetesagenda.proyectoagenda.R;
 public class AgendaActivity extends AppCompatActivity {
 
     EditText ed1,ed2,ed3;

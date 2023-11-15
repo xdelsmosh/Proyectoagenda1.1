@@ -1,4 +1,4 @@
-package com.example.proyectoagenda;
+package com.paquetesagenda.proyectoagenda;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -20,6 +20,13 @@ public class Database  extends SQLiteOpenHelper {
         String qry1 = "create table users(usuario text,email,password text)";
         sqLiteDatabase.execSQL(qry1);
 
+
+        ContentValues cv = new ContentValues();
+        cv.put("usuario", "toño");
+        cv.put("email", "toño1@ejemplo.com");
+        cv.put("password", "toño1234@");
+
+        sqLiteDatabase.insert("users", null, cv);
         String qry2 = "create table cart(usuario text,product text,price float,otype text)";
         sqLiteDatabase.execSQL(qry2);
         String qry3 = "create table orderplace(usuario text,product text,price float,otype text)";
@@ -58,14 +65,14 @@ public class Database  extends SQLiteOpenHelper {
 
 
     public void addCart(String usuario ,String product,float price,String otype){
-        ContentValues cv =new ContentValues();
-        cv.put("usuario",usuario);
-        cv.put("product",product);
-        cv.put("precio",price);
-        cv.put("otype",otype);
-        SQLiteDatabase db = getWritableDatabase();
-        db.insert("cart",null,cv);
-        db.close();
+            ContentValues cv =new ContentValues();
+            cv.put("usuario",usuario);
+            cv.put("product",product);
+            cv.put("price",price);
+            cv.put("otype",otype);
+            SQLiteDatabase db = getWritableDatabase();
+            db.insert("cart",null,cv);
+            db.close();
         }
 
 

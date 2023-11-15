@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.proyectoagenda"
+    namespace = "com.paquetesagenda.proyectoagenda"
     compileSdk = 33
 
     defaultConfig {
-        applicationId = "com.example.proyectoagenda"
+        applicationId = "com.paquetesagenda.proyectoagenda"
         minSdk = 24
         targetSdk = 33
         versionCode = 1

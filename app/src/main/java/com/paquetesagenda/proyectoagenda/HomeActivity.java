@@ -1,10 +1,7 @@
-package com.example.proyectoagenda;
+package com.paquetesagenda.proyectoagenda;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.biometric.BiometricPrompt;
 import androidx.cardview.widget.CardView;
-import androidx.core.content.ContextCompat;
 
 import android.content.Context;
 import android.content.Intent;
@@ -13,7 +10,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
-import java.util.concurrent.Executor;
+import com.paquetesagenda.OrdendetailsActivity;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -64,7 +61,17 @@ public class HomeActivity extends AppCompatActivity {
         ordendetails.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(HomeActivity.this,OrdenActivity.class));
+                startActivity(new Intent(HomeActivity.this, OrdendetailsActivity.class));
+
+            }
+        });
+
+
+        CardView galeria = findViewById(R.id.galeria);
+        galeria.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(HomeActivity.this, GaleriaActivity.class));
 
             }
         });

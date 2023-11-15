@@ -1,4 +1,4 @@
-package com.example.proyectoagenda;
+package com.paquetesagenda.proyectoagenda;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
